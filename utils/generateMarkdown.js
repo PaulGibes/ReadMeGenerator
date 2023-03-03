@@ -34,19 +34,19 @@ function generateMarkdown(data) {
 ${data.installation}
 
 ## Usage
-${data.Usage}
+${data.usage}
 
 ${data.license !== "None" ? "## License" : ""}
 ${renderLicense(data.license)}
 
 ## Contributing
-${data.Contributing}
+${data.contributing}
 
 ## Tests
-${data.Tests}
+${data.tests}
 
 ## Questions
-${data.Questions}
+${data.questions}
 
 `;
 }

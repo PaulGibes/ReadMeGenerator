@@ -3,6 +3,7 @@ const inquirer = require("inquirer");
 const fs = require("fs");
 const path = require("path");
 const generateMarkdown = require("./utils/generateMarkdown");
+const desiredPath = path.join(process.cwd(), "Output", "ReadMe.md");
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -50,7 +51,13 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+  fs.writeFile(desiredPath, generateMarkdown(answers), (err) =>
+    err
+      ? console.error(err)
+      : console.log("Your file was created in the Output directory!")
+  );
+}
 
 // TODO: Create a function to initialize app
 function init() {}
