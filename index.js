@@ -51,16 +51,26 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-  fs.writeFile(desiredPath, generateMarkdown(answers), (err) =>
-    err
-      ? console.error(err)
-      : console.log("Your file was created in the Output directory!")
-  );
-}
+// function writeToFile(fileName, data) {
+//   fs.writeFile(desiredPath, generateMarkdown(answers), (err) =>
+//     err
+//       ? console.error(err)
+//       : console.log("Your file was created in the Output directory!")
+//   );
+// }
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+  inquirer
+    .prompt(questions)
+    .then((answers) =>
+      fs.writeFile(desiredPath, generateMarkdown(answers), (err) =>
+        err
+          ? console.error(err)
+          : console.log("Your file was created in the Output directory!")
+      )
+    );
+}
 
 // Function call to initialize app
 init();
