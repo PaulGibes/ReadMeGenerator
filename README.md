@@ -2,7 +2,7 @@
 
 ## Description
 
-This project is designed to quickly and easy create README.md files. With a single terminal command and after answering a few questions, a file will be created with the user's inputs!
+This project is designed to quickly and easy create README.md files. The goal of this project is to avoid writing the same code to create similar README files.
 
 ## Table of Contents
 
@@ -19,11 +19,17 @@ No installation needed!
 
 ## Usage
 
-The goal of this project is to avoid writing the same code to create similar .md files.
+With a single terminal command and after answering a few questions, a file will be created with the user's inputs!
+
+![Screenshot of the deployed project](./Assets/images/readmeScreenshot.PNG)
 
 ## License
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+## Collaborators
+
+Currently there are no collaborators.
 
 ## Contributing
 

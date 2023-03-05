@@ -22,6 +22,7 @@ function generateMarkdown(data) {
   - [Installation](#installation)
   - [Usage](#usage)
   ${data.license !== "None" ? "- [License](#license)" : ""}
+  - [Collaborators](#collaborators)
   - [Contributing](#contributing)
   - [Tests](#tests)
   - [Questions](#questions)
@@ -32,8 +33,13 @@ ${data.installation}
 ## Usage
 ${data.usage}
 
+![Screenshot of the deployed project](./Assets/images/screenshotLocation.PNG)
+
 ${data.license !== "None" ? "## License" : ""}
 ${renderLicense(data.license)}
+
+## Collaborators
+${data.collaborators}
 
 ## Contributing
 ${data.contributing}

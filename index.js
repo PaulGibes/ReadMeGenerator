@@ -14,7 +14,13 @@ const questions = [
   {
     type: "input",
     name: "description",
-    message: "Give a brief description of the project.",
+    message:
+      "Give a brief description of the project. (for more specific, guiding questions look at the index.js file) ",
+    // What was the motivation?
+    // Why did we build this?
+    // What problem does it solve?
+    // What did you learn?
+    // What features are there?
   },
   {
     type: "input",
@@ -26,6 +32,11 @@ const questions = [
     name: "usage",
     message: "What is it used for?",
   },
+  // {
+  //   type: "input",
+  //   name: "image",
+  //   message: "What is the screenshot location? (if none leave blank)",
+  // },
   {
     type: "list",
     name: "license",
@@ -34,8 +45,14 @@ const questions = [
   },
   {
     type: "input",
+    name: "collaborators",
+    message:
+      "Do you have any collaborators for this project? (link their github profiles and any third party assets)",
+  },
+  {
+    type: "input",
     name: "contributing",
-    message: "What are the instructions for contributing?",
+    message: "What are the instructions for those who want to contribute?",
   },
   {
     type: "input",
